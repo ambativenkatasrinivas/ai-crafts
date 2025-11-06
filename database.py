@@ -1,6 +1,10 @@
 from sqlmodel import SQLModel, create_engine, Session
 
-DATABASE_URL = "sqlite:///./food_store.db"
+# PostgreSQL connection URL format:
+# postgresql+psycopg2://<username>:<password>@<host>:<port>/<database_name>
+
+DATABASE_URL = "postgresql+psycopg2://postgres:password@localhost:5432/ai-crafts"
+
 engine = create_engine(DATABASE_URL, echo=True)
 
 def init_db():

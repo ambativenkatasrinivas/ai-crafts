@@ -5,7 +5,7 @@ from database import init_db, engine
 
 app = Flask(__name__)
 
-@app.before_first_request
+@app.before_request
 def on_startup():
     init_db()
 

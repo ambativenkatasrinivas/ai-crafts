@@ -1,3 +1,4 @@
 flask
 sqlmodel
 uvicorn
+psycopg2-binary
